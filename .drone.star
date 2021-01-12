@@ -42,7 +42,7 @@ def main(ctx):
   linux_cxx("UBSAN=1 TOOLSET=clang COMPILER=clang++-7 CXXS Job 25", "clang++-7", packages="clang-7 libstdc++-5-dev", llvm_os="trusty", llvm_ver="7", buildtype="boost", image=linuxglobalimage, environment={'UBSAN': '1', 'TOOLSET': 'clang', 'COMPILER': 'clang++-7', 'CXXSTD': '03,11,14,17,2a', 'UBSAN_OPTIONS': 'print_stacktrace=1', 'DRONE_JOB_UUID': 'f6e1126ced'}, globalenv=globalenv),
   linux_cxx("TOOLSET=clang COMPILER=clang++-libc++ CXXSTD= Job 26", "clang++-libc++", packages="libc++-dev", buildtype="boost", image=linuxglobalimage, environment={'TOOLSET': 'clang', 'COMPILER': 'clang++-libc++', 'CXXSTD': '03,11,14,1z', 'DRONE_JOB_UUID': '887309d048'}, globalenv=globalenv),
   linux_cxx("UBSAN=1 TOOLSET=clang COMPILER=clang++-libc++ Job 27", "clang++-libc++", packages="libc++-dev", buildtype="boost", image=linuxglobalimage, environment={'UBSAN': '1', 'TOOLSET': 'clang', 'COMPILER': 'clang++-libc++', 'CXXSTD': '03,11,14,1z', 'UBSAN_OPTIONS': 'print_stacktrace=1', 'DRONE_JOB_UUID': 'bc33ea4e26'}, globalenv=globalenv),
-  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=03,11,1 Job 28", "clang++", packages="", buildtype="boost", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '03,11,14,1z', 'DRONE_JOB_OS_NAME': 'osx', 'DRONE_JOB_UUID': '0a57cb53ba'}, globalenv=globalenv),
+  osx_cxx("TOOLSET=clang COMPILER=clang++ CXXSTD=03,11,1 Job 28", "clang++", packages="", buildtype="boost", environment={'TOOLSET': 'clang', 'COMPILER': 'clang++', 'CXXSTD': '03,11,14,1z', 'DRONE_JOB_UUID': '0a57cb53ba'}, globalenv=globalenv),
   ]
 
 # from https://github.com/boostorg/boost-ci
